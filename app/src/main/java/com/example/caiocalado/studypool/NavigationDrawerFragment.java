@@ -104,6 +104,7 @@ public class NavigationDrawerFragment extends Fragment {
                 android.R.id.text1,
                 new String[]{
                         getString(R.string.title_section_study),
+                        getString(R.string.title_section_checkStudy),
                         getString(R.string.title_section_messages),
                         getString(R.string.title_section_settings),
                         getString(R.string.title_section_logout)

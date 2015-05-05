@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_floating_material_light">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/background_material_light"
+        android:paddingBottom="20dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:src="@drawable/watermissing"-->
+            <!--android:background="@color/background_floating_material_light"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/questionClass"
+            android:id="@+id/questionClassTV"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@color/background_floating_material_light"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:id="@+id/questionClassET"
+            android:hint="@string/questionClassHint"
+            android:layout_below="@+id/questionClassTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#95a5a6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/questionInfoClass"
+            android:id="@+id/infoClassQuestionTV"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:textAlignment="center"
+            android:background="@color/background_floating_material_light"
+            android:layout_below="@+id/questionClassET"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/infoClassED"
+            android:hint="@string/questionInfoClassHint"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/infoClassQuestionTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#95a5a6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/questionConfident"
+            android:id="@+id/questionConfidentTV"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:textAlignment="center"
+            android:background="@color/background_floating_material_light"
+            android:layout_below="@+id/infoClassED"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingConfidence"
+            android:layout_below="@+id/questionConfidentTV"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/allFieldsText"
+            android:id="@+id/allFieldsRequired"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:textAlignment="center"
+            android:background="@color/background_floating_material_light"
+            android:layout_below="@+id/ratingConfidence"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tellOthersText"
+            android:id="@+id/tellOthersButton"
+            android:layout_below="@+id/allFieldsRequired"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</ScrollView>

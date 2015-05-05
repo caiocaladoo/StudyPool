@@ -36,30 +36,13 @@ public class MainActivityStudyPool extends ActionBarActivity
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
-        mTitle = getTitle();
+        mTitle = getString(R.string.title_section_study);
 
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
-//        helpButton = (Button) findViewById(R.id.helpButton);
-//
-//        helpButton.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view){
-//                Toast.makeText(getApplicationContext(), "msg msg", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//
-//        studyButton = (Button) findViewById(R.id.studyButton);
-//
-//        studyButton.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view){
-//                Toast.makeText(getApplicationContext(), "msgasdas msg", Toast.LENGTH_SHORT).show();
-//            }
-//        });
     }
 
     @Override
@@ -70,15 +53,23 @@ public class MainActivityStudyPool extends ActionBarActivity
 
         switch (position){
             case 0:
+                mTitle = getString(R.string.title_section_study);
                 objFragment = new StudyFragment();
                 break;
             case 1:
-                objFragment = new MessagesFragment();
+                mTitle = getString(R.string.title_section_checkStudy);
+                objFragment = new CheckStudyFragment();
                 break;
             case 2:
-                objFragment = new SettingsFragment();
+                mTitle = getString(R.string.title_section_messages);
+                objFragment = new MessagesFragment();
                 break;
             case 3:
+                mTitle = getString(R.string.title_section_settings);
+                objFragment = new SettingsFragment();
+                break;
+            case 4:
+                //logout?
                 objFragment = new StudyFragment();
                 break;
         }
@@ -88,10 +79,6 @@ public class MainActivityStudyPool extends ActionBarActivity
                 .replace(R.id.container, objFragment)
                 .commit();
 
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        fragmentManager.beginTransaction()
-//                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-//                .commit();
     }
 
     public void onSectionAttached(int number) {
@@ -100,12 +87,15 @@ public class MainActivityStudyPool extends ActionBarActivity
                 mTitle = getString(R.string.title_section_study);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section_messages);
+                mTitle = getString(R.string.title_section_checkStudy);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section_settings);
+                mTitle = getString(R.string.title_section_messages);
                 break;
             case 4:
+                mTitle = getString(R.string.title_section_settings);
+                break;
+            case 5:
                 mTitle = getString(R.string.title_section_logout);
                 break;
         }
