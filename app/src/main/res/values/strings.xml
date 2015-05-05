@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StudyPool</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_activity_study_pool">MainActivityStudyPool</string>
+    <string name="title_section1">Study</string>
+    <string name="title_section2">Messages</string>
+    <string name="title_section3">Settings</string>
+    <string name="title_section4">Section 4</string>
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_register">Register New Student</string>
+
+    <!-- Sections Titles -->
+    <string name='title_section_study'>Study</string>
+    <string name='title_section_messages'>Messages</string>
+    <string name='title_section_settings'>Settings</string>
+    <string name='title_section_logout'>Logout</string>
+
+    <!-- Study -->
+    <string name='study_info'>What would you like to do?</string>
+    <string name='helpText'>Look for help</string>
+    <string name='studyText'>Start to study</string>
+
+
+</resources>

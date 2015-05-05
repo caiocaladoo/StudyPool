@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_floating_material_light">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/background_material_light"
+        android:paddingBottom="20dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:src="@drawable/watermissing"-->
+            <!--android:background="@color/background_floating_material_light"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hey I'm into the SETTINGS"
+            android:id="@+id/homeInfoText"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@color/background_floating_material_light"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <!--android:layout_below="@+id/imageView"-->
+
+
+    </RelativeLayout>
+</ScrollView>
