@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.google.android.gms.maps.GoogleMap;
+
 /**
  * Created by caiocalado on 5/4/15.
  */
@@ -15,6 +17,7 @@ public class StudyFragment extends Fragment{
     private View rootView;
 
     private Button helpButton, studyButton;
+    private GoogleMap googleMap;
 
 
     public StudyFragment(){}
@@ -23,6 +26,10 @@ public class StudyFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         rootView = inflater.inflate(R.layout.fragment_study, container, false);
+
+//        SupportMapFragment supportMapFragment = rootView.findFragmentById(R.id.map);
+//        googleMap = supportMapFragment.getMap();
+//        googleMap.setMyLocationEnabled(true);
 
 //        helpButton = (Button) rootView.findViewById(R.id.helpButton);
 //
