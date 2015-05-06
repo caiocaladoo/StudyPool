@@ -10,31 +10,104 @@
         android:background="@color/background_material_light"
         android:paddingBottom="20dp">
 
-        <!--<ImageView-->
-            <!--android:layout_width="200dp"-->
-            <!--android:layout_height="200dp"-->
-            <!--android:id="@+id/imageView"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_marginTop="20dp"-->
-            <!--android:src="@drawable/watermissing"-->
-            <!--android:background="@color/background_floating_material_light"/>-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/nameET"
+            android:hint="@string/nameText"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailED"
+            android:hint="@string/emailText"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/nameET"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/majorED"
+            android:hint="@string/majorText"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/emailED"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Hey I'm into the SETTINGS"
-            android:id="@+id/homeInfoText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Confirm your password to approve the changes"
+            android:id="@+id/confirmPasswordInfo"
             android:paddingRight="15dp"
             android:paddingLeft="15dp"
-            android:layout_centerHorizontal="true"
-            android:textAlignment="center"
-            android:background="@color/background_floating_material_light"
+            android:paddingTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/majorED"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:textStyle="bold"
-            android:typeface="sans" />
+            android:textColor="#000000" />
 
-        <!--android:layout_below="@+id/imageView"-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="@string/prompt_password"
+            android:id="@+id/passwordED"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/confirmPasswordInfo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000" />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="@string/passwordConfirmText"
+            android:id="@+id/passwordConfirmED"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/passwordED"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:id="@+id/registerBTN"
+            android:layout_below="@+id/passwordConfirmED"
+            android:layout_centerHorizontal="true"
+            android:enabled="false" />
+
 
 
     </RelativeLayout>

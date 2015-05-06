@@ -70,7 +70,7 @@ public class MainActivityStudyPool extends ActionBarActivity
                 break;
             case 4:
                 //logout?
-                objFragment = new StudyFragment();
+                getSupportFragmentManager().popBackStack();
                 break;
         }
         // update the main content by replacing fragments

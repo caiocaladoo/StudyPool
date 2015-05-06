@@ -2,17 +2,71 @@ package com.example.caiocalado.studypool;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class RegisterActivity extends ActionBarActivity {
+
+    private EditText name, email, password, passwordConfirm;
+    private Button register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 //        getActionBar().hide();
+
+        name = (EditText) findViewById(R.id.nameET);
+        email = (EditText) findViewById(R.id.emailED);
+        password = (EditText) findViewById(R.id.passwordED);
+
+
+
+
+        passwordConfirm = (EditText) findViewById(R.id.passwordConfirmED);
+
+        passwordConfirm.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                Toast.makeText(RegisterActivity.this, "Acabou", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                boolean checkNameEmail = name.getText().length() > 0 & email.getText().length() > 0;
+                boolean checkPassword = password.getText().toString().equals(passwordConfirm.getText().toString());
+                if(checkPassword & checkNameEmail){
+
+                    register.setEnabled(true);
+                }
+
+            }
+        });
+
+        register = (Button) findViewById(R.id.registerBTN);
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(RegisterActivity.this, "New user registered", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
+
+
+
     }
 
 
@@ -23,6 +77,8 @@ public class RegisterActivity extends ActionBarActivity {
 
         return true;
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

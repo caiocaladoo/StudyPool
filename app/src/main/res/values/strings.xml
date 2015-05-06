@@ -17,6 +17,13 @@
     <string name="action_example">Example action</string>
     <string name="title_activity_register">Register New Student</string>
 
+    <!-- Login -->
+    <string name='nameText'>Name</string>
+    <string name='emailText'>Email</string>
+    <string name='majorText'>Major and Minor</string>
+    <string name='passwordConfirmText'>Password Confirm</string>
+    <string name='registerBtnText'>Register</string>
+
     <!-- Sections Titles -->
     <string name='title_section_study'>StudyPool</string>
     <string name='title_section_checkStudy'>Check-in Study</string>
